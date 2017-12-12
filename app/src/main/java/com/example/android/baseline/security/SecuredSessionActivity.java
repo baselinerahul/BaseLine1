@@ -74,6 +74,7 @@ public class SecuredSessionActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.website_design) {
+//            MenuItem  item2=(MenuItem)findViewById(R.id.web_developme?
             Intent intent = new Intent(this, Web_Design.class);
             startActivity(intent);
         } else if (id == R.id.web_development) {
