@@ -1,7 +1,6 @@
 package com.example.android.baseline.activity;
 
 
-import android.app.Notification;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -9,39 +8,67 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.android.baseline.Notification.Send_Notifaction;
+import com.daimajia.slider.library.Animations.DescriptionAnimation;
+import com.daimajia.slider.library.SliderLayout;
+import com.daimajia.slider.library.SliderTypes.BaseSliderView;
+import com.daimajia.slider.library.SliderTypes.TextSliderView;
+import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.example.android.baseline.R;
-import com.example.android.baseline.Seo;
-import com.example.android.baseline.WebDevlapment;
-import com.example.android.baseline.Web_Design;
 import com.example.android.baseline.app.Config;
 import com.example.android.baseline.security.SecuredSessionActivity;
 import com.example.android.baseline.utils.NotificationUtils;
-
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import java.util.HashMap;
 
-public class MainActivity extends SecuredSessionActivity {
-    Button degin,devlopment,seo,notibtn;
+
+public class MainActivity extends SecuredSessionActivity implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
     private static final String TAG = MainActivity.class.getSimpleName();
+    Button degin, devlopment, seo, notibtn;
+    SliderLayout sliderLayout;
+    HashMap<String, String> Hash_file_maps;
     private BroadcastReceiver mRegistrationBroadcastReceiver;
     private TextView txtRegId, txtMessage;
 
      @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        onNavigation();
-        txtRegId = (TextView) findViewById(R.id.txt_reg_id);
-        txtMessage = (TextView) findViewById(R.id.txt_push_message);
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main);
+         onNavigation();
+         Hash_file_maps = new HashMap<String, String>();
+
+         sliderLayout = (SliderLayout) findViewById(R.id.slider);
+
+         Hash_file_maps.put("WEB DEGINE ", "http://baselineitdevelopment.com/wp-content/uploads/2016/02/blx-d-p02-1.jpg");
+         Hash_file_maps.put("WEB DEVELOPMENT ", "http://baselineitdevelopment.com/wp-content/uploads/2016/03/blx-d-p06.jpg");
+         Hash_file_maps.put("SEO", "http://baselineitdevelopment.com/wp-content/uploads/2016/02/blx-d-p15.jpg");
+
+         for (String name : Hash_file_maps.keySet()) {
+
+             TextSliderView textSliderView = new TextSliderView(MainActivity.this);
+             textSliderView.description(name).image(Hash_file_maps.get(name))
+                     .setScaleType(BaseSliderView.ScaleType.Fit)
+                     .setOnSliderClickListener(this);
+             textSliderView.bundle(new Bundle());
+             textSliderView.getBundle().putString("extra", name);
+             sliderLayout.addSlider(textSliderView);
+         }
+         sliderLayout.setPresetTransformer(SliderLayout.Transformer.Accordion);
+         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+         sliderLayout.setCustomAnimation(new DescriptionAnimation());
+         sliderLayout.setDuration(3000);
+         sliderLayout.addOnPageChangeListener(this);
+
+
+         txtRegId = (TextView) findViewById(R.id.txt_reg_id);
+         txtMessage = (TextView) findViewById(R.id.txt_push_message);
+
 //        mapView = (MapView) findViewById(R.id.mapView);
 
 //        degin = (Button) findViewById(R.id.web_degin);
@@ -83,34 +110,33 @@ public class MainActivity extends SecuredSessionActivity {
 //        });
 
 
+         mRegistrationBroadcastReceiver = new BroadcastReceiver() {
+             @Override
+             public void onReceive(Context context, Intent intent) {
 
-        mRegistrationBroadcastReceiver = new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context context, Intent intent) {
+                 // checking for type intent filter
+                 if (intent.getAction().equals(Config.REGISTRATION_COMPLETE)) {
+                     // gcm successfully registered
+                     // now subscribe to `global` topic to receive app wide notifications
+                     FirebaseMessaging.getInstance().subscribeToTopic(Config.TOPIC_GLOBAL);
 
-                // checking for type intent filter
-                if (intent.getAction().equals(Config.REGISTRATION_COMPLETE)) {
-                    // gcm successfully registered
-                    // now subscribe to `global` topic to receive app wide notifications
-                    FirebaseMessaging.getInstance().subscribeToTopic(Config.TOPIC_GLOBAL);
+                     displayFirebaseRegId();
 
-                    displayFirebaseRegId();
+                 } else if (intent.getAction().equals(Config.PUSH_NOTIFICATION)) {
+                     // new push notification is received
 
-                } else if (intent.getAction().equals(Config.PUSH_NOTIFICATION)) {
-                    // new push notification is received
+                     String message = intent.getStringExtra("message");
+                     Toast.makeText(getApplicationContext(), "Push notification: " + message, Toast.LENGTH_LONG).show();
+                     if (message.isEmpty()) {
+                         txtMessage.setText("nulll");
+                     }
+                     txtMessage.setText(message);
+                 }
+             }
+         };
 
-                    String message = intent.getStringExtra("message");
-                    Toast.makeText(getApplicationContext(), "Push notification: " + message, Toast.LENGTH_LONG).show();
-                    if(message.isEmpty()){
-                        txtMessage.setText("nulll");
-                    }
-                    txtMessage.setText(message);
-                }
-            }
-        };
-
-        displayFirebaseRegId();
-    }
+         displayFirebaseRegId();
+     }
 
     // Fetches reg id from shared preferences
     // and displays on the screen
@@ -148,4 +174,34 @@ public class MainActivity extends SecuredSessionActivity {
         LocalBroadcastManager.getInstance(this).unregisterReceiver(mRegistrationBroadcastReceiver);
         super.onPause();
     }
+
+
+    @Override
+    protected void onStop() {
+
+        sliderLayout.stopAutoCycle();
+
+        super.onStop();
+    }
+
+    @Override
+    public void onSliderClick(BaseSliderView slider) {
+
+        Toast.makeText(this, slider.getBundle().get("extra") + "", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+
+        Log.d("Slider Demo", "Page Changed: " + position);
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+    }
 }
+

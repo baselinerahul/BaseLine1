@@ -16,663 +16,68 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/img"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/baseline" />
-
-
-            <TextView
-                android:id="@+id/txt_push_message"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:gravity="center_horizontal"
-                android:textAlignment="center"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Web Design and Web Development Company"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="26dp" />
-
-            <TextView
-                android:id="@+id/txt_reg_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:visibility="invisible" />
-
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                card_view:cardBackgroundColor="@color/white"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardElevation="5dp"
-                card_view:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/back_gro"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="40dp"
-                        android:src="@drawable/computer" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Website"
-                            android:textColor="@color/white"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:text="Desgin"
-                            android:textColor="@color/white"
-                            android:textSize="20dp" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/webDeginStr"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="16dp" />
-
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                card_view:cardBackgroundColor="@color/white"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardElevation="5dp"
-                card_view:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/back_gro"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="40dp"
-                        android:src="@drawable/computer" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Web"
-                            android:textColor="@color/white"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:text="Development"
-                            android:textColor="@color/white"
-                            android:textSize="20dp" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/webDevelopStr"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="16dp" />
-
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                card_view:cardBackgroundColor="@color/white"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardElevation="5dp"
-                card_view:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/back_gro"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView1"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="40dp"
-                        android:src="@drawable/computer" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="SEO"
-                            android:textColor="@color/white"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:text="Optimization"
-                            android:textColor="@color/white"
-                            android:textSize="20dp" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/seostr"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="16dp" />
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/colorPrimary"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="20dp"
-                    android:text="@string/web"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="@string/web1"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="16dp" />
-
-                <Button
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/my_button_bg"
-                    android:text="REQUEST A QUOTE"
-                    android:textColor="@color/white" />
+                    android:layout_weight=".5">
 
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/design_icon" />
 
-            </LinearLayout>
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="OUR WEB DESIGN"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="25dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="SERVICES"
-                    android:textAlignment="center"
-
-                    android:textColor="@color/black"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/aboutus"
-                    android:textAlignment="center"
-                    android:textColor="@color/black" />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        card_view:cardBackgroundColor="@color/white"
-        card_view:cardCornerRadius="10dp"
-        card_view:cardElevation="5dp"
-        card_view:cardUseCompatPadding="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/panit" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Website"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="5dp"
-                    android:text="Desgin"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="20dp" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="SERVICES"
-                android:textAlignment="center"
-                android:textColor="@color/colorPrimary"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:text="Exceptional innovative web compositions having intuitive User Interface with enhanced client encounter, that emerge well to give you an additional favorable position over your competitor site. We hear you out, gather each snippet of data about your business, your association, your item, your qualities, your vision and put ourselves to convey you a quality products"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16dp" />
-
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        card_view:cardBackgroundColor="@color/white"
-        card_view:cardCornerRadius="10dp"
-        card_view:cardElevation="5dp"
-        card_view:cardUseCompatPadding="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/pencel_circal" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="LOGO AND GRAPHICS"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:text="Logo Designing accepted to be the most critical and troublesome craftsmanship to skill. We comprehend the significance of a logo in making brand personality and our inventive fashioners are constantly anxious to take this test as it gives them the best chance to feature their innovativeness. Our creators can think of the most delightful and drawing in thoughts for your logo that can truly help your organization and brand to emerge in the market."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16dp" />
-
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        card_view:cardBackgroundColor="@color/white"
-        card_view:cardCornerRadius="10dp"
-        card_view:cardElevation="5dp"
-        card_view:cardUseCompatPadding="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/panit" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="WEBSITE REDESIGN"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:text="Your present site Give your current site a contemporary look without changing its usefulness. Hub Web Art gives site re-plan administrations to the individuals who are not happy with the present look of their sites. We represent considerable authority in giving your site a structure which is crisp, clean, and engaging."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16dp" />
-
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="ABOUT US"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/black" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/anoutsbaseline"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
-
-
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            card_view:cardBackgroundColor="@color/white"
-            card_view:cardCornerRadius="10dp"
-            card_view:cardElevation="5dp"
-            card_view:cardUseCompatPadding="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="40dp"
-                    android:src="@drawable/panit" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="OUR PROFILE"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="20dp" />
-
-
-
-                </LinearLayout>
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="Baseline Development is an expert website architecture organization in Mohali, Punjab that provisions administrations of website composition and advancement, web application improvement, site facilitating….."
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            card_view:cardBackgroundColor="@color/white"
-            card_view:cardCornerRadius="10dp"
-            card_view:cardElevation="5dp"
-            card_view:cardUseCompatPadding="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="40dp"
-                    android:src="@drawable/pencel_circal" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CAREER"
-                        android:textColor="@color/colorPrimary"
+                        android:text="Website Desgin"
+                        android:textColor="@color/black"
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/webDeginStr"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
                 </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="Baseline Development offers energizing vocation openings. There are authority open doors for the accomplished and equivalent open doors for freshers to demonstrate their ability…."
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -691,154 +96,313 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="40dp"
-                    android:src="@drawable/panit" />
+                android:orientation="horizontal"
+                android:weightSum="2">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/development" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Website Desgin"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="OUR SERVICES"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="We spend significant time in differing arrangements including web 2.0 advancement, undertaking web applications, PHP improvement, eCommerce and CMS sites, iPhone/iPad applications…."
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-
-
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            card_view:cardBackgroundColor="@color/white"
-            card_view:cardCornerRadius="10dp"
-            card_view:cardElevation="5dp"
-            card_view:cardUseCompatPadding="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                      android:weightSum="2"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                         android:src="@drawable/call_icon" />
-                    <TextView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="Call Us Now"
+                        android:text="@string/webDeginStr"
                         android:textColor="@color/black"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textSize="16dp" />
                 </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="Need advice with your website? No problem! Our bolster group is here to help you
-172-5044807"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="fill_parent"
+        <TextView
+            android:id="@+id/txt_push_message"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            card_view:cardBackgroundColor="@color/white"
-            card_view:cardCornerRadius="10dp"
-            card_view:cardElevation="5dp"
-            card_view:cardUseCompatPadding="true">
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:weightSum="2"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/chat_icon" />
-                    <TextView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="Online Chat"
-                        android:textColor="@color/black"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="Welcome to Baseline Customer Service Chat! We would love to get notification from you"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!--<com.google.android.gms.maps.MapView-->
-            <!--android:id="@+id/mapView"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content" />-->
+        <TextView
+            android:id="@+id/txt_reg_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible" />
 
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView><!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
 
-</ScrollView>
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/img"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:layout_width="200dp"--><!--android:layout_height="80dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="20dp"--><!--android:background="@drawable/baseline" />-->
+
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="20dp"--><!--android:text="Web Design and Web Development Company"--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="26dp" />-->
+
+    <!---->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/back_gro"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="40dp"--><!--android:src="@drawable/computer" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="Website"--><!--android:textColor="@color/white"--><!--android:textSize="20dp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="5dp"--><!--android:text="Desgin"--><!--android:textColor="@color/white"--><!--android:textSize="20dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="@string/webDeginStr"--><!--android:textAlignment="center"--><!--android:textColor="@color/white"--><!--android:textSize="16dp" />-->
+
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"-->
+
+    <!--android:layout_marginRight="20dp"--><!--android:layout_marginTop="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/back_gro"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="40dp"--><!--android:src="@drawable/computer" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="Web"--><!--android:textColor="@color/white"--><!--android:textSize="20dp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="5dp"--><!--android:text="Development"--><!--android:textColor="@color/white"--><!--android:textSize="20dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="@string/webDevelopStr"--><!--android:textAlignment="center"--><!--android:textColor="@color/white"--><!--android:textSize="16dp" />-->
+
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/card_view"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"-->
+
+    <!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--android:layout_marginTop="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/back_gro"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:id="@+id/imageView1"--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="40dp"--><!--android:src="@drawable/computer" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="SEO"--><!--android:textColor="@color/white"--><!--android:textSize="20dp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="5dp"--><!--android:text="Optimization"--><!--android:textColor="@color/white"--><!--android:textSize="20dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="@string/seostr"--><!--android:textAlignment="center"--><!--android:textColor="@color/white"--><!--android:textSize="16dp" />-->
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="20dp"--><!--android:background="@color/colorPrimary"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:layout_marginTop="20dp"--><!--android:text="@string/web"--><!--android:textAlignment="center"--><!--android:textColor="@color/white"--><!--android:textSize="16dp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="@string/web1"--><!--android:textAlignment="center"--><!--android:textColor="@color/white"--><!--android:textSize="16dp" />-->
+
+    <!--<Button--><!--android:layout_width="200dp"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="right"--><!--android:layout_marginBottom="20dp"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:layout_marginTop="5dp"--><!--android:background="@drawable/my_button_bg"--><!--android:text="REQUEST A QUOTE"--><!--android:textColor="@color/white" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@color/white"--><!--android:gravity="center"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="10dp"--><!--android:text="OUR WEB DESIGN"--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="25dp" />-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:text="SERVICES"--><!--android:textAlignment="center"-->
+
+    <!--android:textColor="@color/black"--><!--android:textSize="25dp"--><!--android:textStyle="bold" />-->
+
+    <!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="2dp"--><!--android:layout_marginLeft="40dp"--><!--android:layout_marginRight="40dp"--><!--android:layout_marginTop="5dp"--><!--android:background="@color/black" />-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="20dp"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:layout_marginTop="10dp"--><!--android:text="@string/aboutus"--><!--android:textAlignment="center"--><!--android:textColor="@color/black" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:layout_width="wrap_content"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="40dp"--><!--android:src="@drawable/panit" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="Website"--><!--android:textColor="@color/colorPrimary"--><!--android:textSize="20dp" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="5dp"--><!--android:text="Desgin"--><!--android:textColor="@color/colorPrimary"--><!--android:textSize="20dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="5dp"--><!--android:text="SERVICES"--><!--android:textAlignment="center"--><!--android:textColor="@color/colorPrimary"--><!--android:textSize="20dp" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="Exceptional innovative web compositions having intuitive User Interface with enhanced client encounter, that emerge well to give you an additional favorable position over your competitor site. We hear you out, gather each snippet of data about your business, your association, your item, your qualities, your vision and put ourselves to convey you a quality products"--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="16dp" />-->
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="40dp"--><!--android:src="@drawable/pencel_circal" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="LOGO AND GRAPHICS"--><!--android:textColor="@color/colorPrimary"--><!--android:textSize="20dp"--><!--android:textStyle="bold" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="Logo Designing accepted to be the most critical and troublesome craftsmanship to skill. We comprehend the significance of a logo in making brand personality and our inventive fashioners are constantly anxious to take this test as it gives them the best chance to feature their innovativeness. Our creators can think of the most delightful and drawing in thoughts for your logo that can truly help your organization and brand to emerge in the market."--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="16dp" />-->
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="40dp"--><!--android:src="@drawable/panit" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="WEBSITE REDESIGN"--><!--android:textColor="@color/colorPrimary"--><!--android:textSize="20dp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="Your present site Give your current site a contemporary look without changing its usefulness. Hub Web Art gives site re-plan administrations to the individuals who are not happy with the present look of their sites. We represent considerable authority in giving your site a structure which is crisp, clean, and engaging."--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="16dp" />-->
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@color/white"--><!--android:gravity="center"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="10dp"--><!--android:text="ABOUT US"--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="25dp" />-->
+
+
+    <!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="2dp"--><!--android:layout_marginLeft="40dp"--><!--android:layout_marginRight="40dp"--><!--android:layout_marginTop="5dp"--><!--android:background="@color/black" />-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="20dp"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:layout_marginTop="10dp"--><!--android:text="@string/anoutsbaseline"--><!--android:textAlignment="center"--><!--android:textColor="@color/black" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:layout_width="wrap_content"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="40dp"--><!--android:src="@drawable/panit" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="OUR PROFILE"--><!--android:textColor="@color/colorPrimary"--><!--android:textSize="20dp" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="Baseline Development is an expert website architecture organization in Mohali, Punjab that provisions administrations of website composition and advancement, web application improvement, site facilitating….."--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="16dp" />-->
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="40dp"--><!--android:src="@drawable/pencel_circal" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="CAREER"--><!--android:textColor="@color/colorPrimary"--><!--android:textSize="20dp"--><!--android:textStyle="bold" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="Baseline Development offers energizing vocation openings. There are authority open doors for the accomplished and equivalent open doors for freshers to demonstrate their ability…."--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="16dp" />-->
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="40dp"--><!--android:src="@drawable/panit" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="OUR SERVICES"--><!--android:textColor="@color/colorPrimary"--><!--android:textSize="20dp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="We spend significant time in differing arrangements including web 2.0 advancement, undertaking web applications, PHP improvement, eCommerce and CMS sites, iPhone/iPad applications…."--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="16dp" />-->
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:weightSum="2"--><!--android:orientation="horizontal">--><!--<ImageView--><!--android:layout_weight="1"--><!--android:layout_width="0dp"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:src="@drawable/call_icon" />--><!--<TextView--><!--android:layout_weight="1"--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:text="Call Us Now"--><!--android:textColor="@color/black"--><!--android:textSize="16dp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="Need advice with your website? No problem! Our bolster group is here to help you--><!--172-5044807"--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="16dp" />-->
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--card_view:cardBackgroundColor="@color/white"--><!--card_view:cardCornerRadius="10dp"--><!--card_view:cardElevation="5dp"--><!--card_view:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:weightSum="2"--><!--android:orientation="horizontal">--><!--<ImageView--><!--android:layout_weight="1"--><!--android:layout_width="0dp"--><!--android:layout_height="50dp"--><!--android:layout_gravity="center"--><!--android:src="@drawable/chat_icon" />--><!--<TextView--><!--android:layout_weight="1"--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:text="Online Chat"--><!--android:textColor="@color/black"--><!--android:textSize="16dp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:layout_marginRight="30dp"--><!--android:text="Welcome to Baseline Customer Service Chat! We would love to get notification from you"--><!--android:textAlignment="center"--><!--android:textColor="@color/black"--><!--android:textSize="16dp" />--><!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+    <!--&lt;!&ndash;<com.google.android.gms.maps.MapView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/mapView"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+
+
+    <!--</LinearLayout>-->
+
+

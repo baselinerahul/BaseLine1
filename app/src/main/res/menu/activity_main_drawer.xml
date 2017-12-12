@@ -5,6 +5,10 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
             android:id="@+id/website_design"
             android:icon="@drawable/ic_menu_camera"
             android:title="Website Design" />
@@ -18,29 +22,25 @@
             android:title="SEO Optimization" />
         <item
             android:id="@+id/contact_us"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/contact_icon"
             android:title="Contact US" />
         <item
+            android:id="@+id/career"
+            android:icon="@drawable/contact_icon"
+            android:title="Career" />
+        <item
             android:id="@+id/about_us"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/about_icon"
             android:title="About us" />
         <item
             android:id="@+id/services"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/services_icon"
             android:title="Services" />
+        <item
+            android:id="@+id/blog_nev"
+            android:icon="@drawable/blog_icon"
+            android:title="BLOG" />
     </group>
 
-    <!--<item android:title="Communicate">-->
-        <!--<menu>-->
-            <!--<item-->
-                <!--android:id="@+id/nav_share"-->
-                <!--android:icon="@drawable/ic_menu_share"-->
-                <!--android:title="Share" />-->
-            <!--<item-->
-                <!--android:id="@+id/nav_send"-->
-                <!--android:icon="@drawable/ic_menu_send"-->
-                <!--android:title="Send" />-->
-        <!--</menu>-->
-    <!--</item>-->
 
 </menu>
