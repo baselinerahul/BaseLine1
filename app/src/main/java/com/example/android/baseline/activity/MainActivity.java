@@ -108,8 +108,6 @@ public class MainActivity extends SecuredSessionActivity implements BaseSliderVi
 //                startActivity(intent);
 //            }
 //        });
-
-
          mRegistrationBroadcastReceiver = new BroadcastReceiver() {
              @Override
              public void onReceive(Context context, Intent intent) {
