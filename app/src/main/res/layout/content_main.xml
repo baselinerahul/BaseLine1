@@ -183,7 +183,7 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/development" />
+                        android:src="@drawable/seo2" />
 
                 </LinearLayout>
 
