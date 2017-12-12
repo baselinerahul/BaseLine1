@@ -26,7 +26,7 @@
             android:title="Contact US" />
         <item
             android:id="@+id/career"
-            android:icon="@drawable/contact_icon"
+            android:icon="@drawable/career_icon"
             android:title="Career" />
         <item
             android:id="@+id/about_us"
