@@ -55,7 +55,9 @@
         <activity
             android:name=".services"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Blog"></activity>
+        <activity
+            android:name=".Blog"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

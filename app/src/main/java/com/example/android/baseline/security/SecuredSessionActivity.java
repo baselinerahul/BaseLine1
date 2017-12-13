@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.example.android.baseline.About_Us;
+import com.example.android.baseline.Blog;
 import com.example.android.baseline.Contact;
 import com.example.android.baseline.R;
 import com.example.android.baseline.Seo;
@@ -94,6 +95,9 @@ public class SecuredSessionActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.services) {
             Intent intent = new Intent(this, services.class);
+            startActivity(intent);
+        } else if (id == R.id.blog_nev) {
+            Intent intent = new Intent(this, Blog.class);
             startActivity(intent);
         }
 
