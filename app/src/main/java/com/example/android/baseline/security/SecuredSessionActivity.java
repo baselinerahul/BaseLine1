@@ -74,13 +74,10 @@ public class SecuredSessionActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         if (id == R.id.home) {
-//            MenuItem  item2=(MenuItem)findViewById(R.id.web_developme?
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
-
         if (id == R.id.website_design) {
-//            MenuItem  item2=(MenuItem)findViewById(R.id.web_developme?
             Intent intent = new Intent(this, Web_Design.class);
             startActivity(intent);
         } else if (id == R.id.web_development) {
@@ -92,13 +89,11 @@ public class SecuredSessionActivity extends AppCompatActivity
         } else if (id == R.id.contact_us) {
             Intent intent = new Intent(this, Contact.class);
             startActivity(intent);
-        }
-        else if (id == R.id.about_us) {
+        } else if (id == R.id.about_us) {
             Intent intent = new Intent(this, About_Us.class);
             startActivity(intent);
-        }
-        else if (id == R.id.services) {
-            Intent intent = new Intent(this,services.class);
+        } else if (id == R.id.services) {
+            Intent intent = new Intent(this, services.class);
             startActivity(intent);
         }
 
