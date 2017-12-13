@@ -12,6 +12,7 @@ import android.view.MenuItem;
 
 import com.example.android.baseline.About_Us;
 import com.example.android.baseline.Blog;
+import com.example.android.baseline.Career;
 import com.example.android.baseline.Contact;
 import com.example.android.baseline.R;
 import com.example.android.baseline.Seo;
@@ -98,6 +99,9 @@ public class SecuredSessionActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.blog_nev) {
             Intent intent = new Intent(this, Blog.class);
+            startActivity(intent);
+        } else if (id == R.id.career) {
+            Intent intent = new Intent(this, Career.class);
             startActivity(intent);
         }
 
