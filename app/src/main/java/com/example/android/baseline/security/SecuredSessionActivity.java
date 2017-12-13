@@ -17,6 +17,7 @@ import com.example.android.baseline.Seo;
 import com.example.android.baseline.Uitls.Constants;
 import com.example.android.baseline.WebDevlapment;
 import com.example.android.baseline.Web_Design;
+import com.example.android.baseline.activity.MainActivity;
 import com.example.android.baseline.services;
 
 /**
@@ -72,6 +73,11 @@ public class SecuredSessionActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        if (id == R.id.home) {
+//            MenuItem  item2=(MenuItem)findViewById(R.id.web_developme?
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
 
         if (id == R.id.website_design) {
 //            MenuItem  item2=(MenuItem)findViewById(R.id.web_developme?
