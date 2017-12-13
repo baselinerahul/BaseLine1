@@ -52,8 +52,10 @@
         <activity
             android:name=".About_Us"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".services"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".services"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Blog"></activity>
     </application>
 
 </manifest>
