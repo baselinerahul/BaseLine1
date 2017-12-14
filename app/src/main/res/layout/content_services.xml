@@ -15,6 +15,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tet1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="120dp"
@@ -67,14 +68,16 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tet2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Website Desgin"
                         android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+
+                        android:textSize="20dp" />
 
                     <TextView
+                        android:id="@+id/tet3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Conplete Website Design
@@ -82,6 +85,7 @@ Website Re-degining
 Bannerrs and Flyers Design
 Logo Design"
                         android:textColor="@color/black"
+
                         android:textSize="16dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -129,14 +133,16 @@ Logo Design"
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tet4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Website DEVELOPMENT"
+                        android:text="Website Development"
+
                         android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textSize="20dp" />
 
                     <TextView
+                        android:id="@+id/tet5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ecommerce Web Service
@@ -146,6 +152,7 @@ PHP Development
 Magento Development
 ShopifyDevelopment"
                         android:textColor="@color/black"
+
                         android:textSize="16dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -193,14 +200,16 @@ ShopifyDevelopment"
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tet6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SEO Optimization"
                         android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+
+                        android:textSize="20dp" />
 
                     <TextView
+                        android:id="@+id/tet7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Web Page optimization
@@ -256,18 +265,20 @@ Online repatation Manegement"
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tet8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SEO Optimization"
+                        android:text="App Development"
                         android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+
+                        android:textSize="20dp" />
 
                     <TextView
+                        android:id="@+id/tet9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
                         android:text="Android Development"
-
                         android:textColor="@color/black"
                         android:textSize="16dp" />
                 </LinearLayout>

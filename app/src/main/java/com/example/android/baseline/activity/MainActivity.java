@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
@@ -33,6 +34,7 @@ public class MainActivity extends SecuredSessionActivity implements BaseSliderVi
     Button degin, devlopment, seo, notibtn;
     SliderLayout sliderLayout;
     HashMap<String, String> Hash_file_maps;
+    TextView textView1, textView2, textView3, textView4, textView5, textView6;
     private BroadcastReceiver mRegistrationBroadcastReceiver;
     private TextView txtRegId, txtMessage;
 
@@ -41,9 +43,24 @@ public class MainActivity extends SecuredSessionActivity implements BaseSliderVi
          super.onCreate(savedInstanceState);
          setContentView(R.layout.activity_main);
          onNavigation();
+         textView1 = findViewById(R.id.txt1);
+         textView2 = findViewById(R.id.txt2);
+         textView3 = findViewById(R.id.txt3);
+         textView4 = findViewById(R.id.txt4);
+         textView5 = findViewById(R.id.txt5);
+         textView6 = findViewById(R.id.txt6);
+         Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
+         textView1.setTypeface(custom_font);
+         textView2.setTypeface(custom_font);
+         textView3.setTypeface(custom_font);
+         textView4.setTypeface(custom_font);
+         textView5.setTypeface(custom_font);
+         textView6.setTypeface(custom_font);
+
+
          Hash_file_maps = new HashMap<String, String>();
 
-         sliderLayout = (SliderLayout) findViewById(R.id.slider);
+         sliderLayout = findViewById(R.id.slider);
 
          Hash_file_maps.put("WEB DEGINE ", "http://baselineitdevelopment.com/wp-content/uploads/2016/02/blx-d-p02-1.jpg");
          Hash_file_maps.put("WEB DEVELOPMENT ", "http://baselineitdevelopment.com/wp-content/uploads/2016/03/blx-d-p06.jpg");
@@ -66,8 +83,8 @@ public class MainActivity extends SecuredSessionActivity implements BaseSliderVi
          sliderLayout.addOnPageChangeListener(this);
 
 
-         txtRegId = (TextView) findViewById(R.id.txt_reg_id);
-         txtMessage = (TextView) findViewById(R.id.txt_push_message);
+         txtRegId = findViewById(R.id.txt_reg_id);
+         txtMessage = findViewById(R.id.txt_push_message);
 
 //        mapView = (MapView) findViewById(R.id.mapView);
 

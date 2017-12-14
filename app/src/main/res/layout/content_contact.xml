@@ -110,6 +110,7 @@
                         android:background="@drawable/add_icon" />
 
                     <TextView
+                        android:id="@+id/address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -131,6 +132,7 @@ Mohali, Industrial Area"
                         android:background="@drawable/phone_icon" />
 
                     <TextView
+                        android:id="@+id/address2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -151,6 +153,7 @@ Mohali, Industrial Area"
                         android:background="@drawable/mail_icon" />
 
                     <TextView
+                        android:id="@+id/address3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

@@ -80,14 +80,15 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/txt1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Website Desgin"
                         android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textSize="20dp" />
 
                     <TextView
+                        android:id="@+id/txt2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/webDeginStr"
@@ -139,14 +140,15 @@
                     android:layout_weight="1.5"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/txt3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Website DEVELOPMENT"
+                        android:text="Website Development"
                         android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textSize="20dp" />
 
                     <TextView
+                        android:id="@+id/txt4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/webDevelopStr"
@@ -198,14 +200,15 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/txt5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SEO Optimization"
                         android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textSize="20dp" />
 
                     <TextView
+                        android:id="@+id/txt6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/seostr"
