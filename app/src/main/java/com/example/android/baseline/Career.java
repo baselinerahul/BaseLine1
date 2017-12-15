@@ -1,5 +1,4 @@
 package com.example.android.baseline;
-
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Typeface;
@@ -96,6 +95,9 @@ public class Career extends SecuredSessionActivity {
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         intent.putExtra("return-data", true);
+        //intent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" +attachmentFile));
         startActivityForResult(Intent.createChooser(intent, "Complete action using"), PICK_FROM_GALLERY);
+
+        //  startActivityForResult(Intent.createChooser(intent, "ChooseFile"), 100);
     }
 }
