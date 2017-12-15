@@ -10,7 +10,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/base_icon"
-        android:label=""
+        android:label="Baseline"
         android:roundIcon="@drawable/base_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -25,20 +25,27 @@
         </activity>
         <activity
             android:name=".Web_Design"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".WebDevlapment"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Seo"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Contact"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.MainActivity"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Notification.Send_Notifaction" />
+        <activity
+            android:name=".Notification.Send_Notifaction"
+            android:label="" />
 
         <service android:name=".service.MyFirebaseMessagingService">
             <intent-filter>
@@ -53,15 +60,19 @@
 
         <activity
             android:name=".About_Us"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".services"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Blog"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".Career"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
     </application>
