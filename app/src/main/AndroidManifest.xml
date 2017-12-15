@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.baseline">
+    package="base.line.android.baseline">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Splash"
+            android:name="base.line.android.baseline.Splash"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,54 +24,54 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Web_Design"
+            android:name="base.line.android.baseline.Web_Design"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".WebDevlapment"
+            android:name="base.line.android.baseline.WebDevlapment"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Seo"
+            android:name="base.line.android.baseline.Seo"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Contact"
+            android:name="base.line.android.baseline.Contact"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="base.line.android.baseline.activity.MainActivity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Notification.Send_Notifaction"
+            android:name="base.line.android.baseline.Notification.Send_Notifaction"
             android:label="" />
 
-        <service android:name=".service.MyFirebaseMessagingService">
+        <service android:name="base.line.android.baseline.service.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".service.MyFirebaseInstanceIDService">
+        <service android:name="base.line.android.baseline.service.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
         <activity
-            android:name=".About_Us"
+            android:name="base.line.android.baseline.About_Us"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".services"
+            android:name="base.line.android.baseline.services"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Blog"
+            android:name="base.line.android.baseline.Blog"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".Career"
+            android:name="base.line.android.baseline.Career"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar"></activity>
 

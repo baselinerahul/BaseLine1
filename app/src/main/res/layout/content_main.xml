@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:scrollbars="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.android.baseline.activity.MainActivity"
+    tools:context="base.line.android.baseline.activity.MainActivity"
     tools:ignore="NamespaceTypo"
     tools:showIn="@layout/app_bar_main">
 
