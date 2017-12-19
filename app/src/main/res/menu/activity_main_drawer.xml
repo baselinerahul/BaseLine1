@@ -14,7 +14,7 @@
             android:title="Website Design" />
         <item
             android:id="@+id/web_development"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/world"
             android:title="Web Development" />
         <item
             android:id="@+id/seo_optimization"

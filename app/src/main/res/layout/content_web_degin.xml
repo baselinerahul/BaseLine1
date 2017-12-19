@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 <ImageView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="54dp"
-    android:background="@drawable/web_degin"/>
+    android:background="@drawable/web_degin" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,9 +18,10 @@
         android:id="@+id/tetwe_deg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
-        android:text="@string/webDeginStr"
+        android:text="Web Designing Company can help you to attract customers. Commonly it is the design of the website which can draw in people but it also has the power to drive them away. Having a one among a type web composition is a vital piece of the marking and promoting the process of your commercial enterprise."
         android:textColor="@color/black"
         android:textSize="20dp" />
     </LinearLayout>

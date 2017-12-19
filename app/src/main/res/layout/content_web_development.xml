@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:background="@drawable/web_development"/>
+        android:background="@drawable/web_development" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +22,8 @@
             android:layout_margin="10dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
-            android:text="@string/webDevelopStr"
+            android:text="we are resourceful of tackling it in the high-grade personal manner. Our
+skillful team up of web designers guide you through with the entire activity of developing and designing a custom website that will suit your particular business status."
             android:textColor="@color/black"
             android:textSize="20dp" />
     </LinearLayout>

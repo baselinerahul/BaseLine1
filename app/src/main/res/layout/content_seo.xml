@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="54dp"
-        android:background="@drawable/seo"/>
+        android:background="@drawable/seo" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,8 +18,10 @@
             android:id="@+id/txt_seo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/seostr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Search Engine Optimization is the process of enhancing keyword visibility for web page on particular Search Engine. Marketing your website through (SEO) search engine optimization and (SMM) Social Media Marketing is just as important as the mode your website looking and purpose."
             android:textColor="@color/black"
             android:textSize="16dp" />
     </LinearLayout>
