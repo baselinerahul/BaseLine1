@@ -16,7 +16,6 @@
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
             card_view:cardBackgroundColor="@color/white"
             card_view:cardElevation="5dp"
             card_view:cardUseCompatPadding="true">
@@ -72,6 +71,7 @@
                         android:textSize="12dp" />
 
                     <Button
+                        android:id="@+id/btm_blocka"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
@@ -145,6 +145,7 @@
                         android:textSize="12dp" />
 
                     <Button
+                        android:id="@+id/btm_blockb"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
@@ -220,6 +221,7 @@
                         android:textSize="12dp" />
 
                     <Button
+                        android:id="@+id/btm_blockc"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"

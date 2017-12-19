@@ -9,7 +9,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="260dp"
         android:background="@drawable/web_development" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,9 +22,8 @@
             android:layout_margin="10dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
-            android:text="we are resourceful of tackling it in the high-grade personal manner. Our
-skillful team up of web designers guide you through with the entire activity of developing and designing a custom website that will suit your particular business status."
+            android:text="we are resourceful of tackling it in the high-grade personal manner. Our skillful team up of web designers guide you through with the entire activity of developing and designing a custom website that will suit your particular business status."
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="16dp" />
     </LinearLayout>
 </LinearLayout>

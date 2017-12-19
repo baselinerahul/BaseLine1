@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="base.line.android.baseline.Splash"
+            android:name=".Splash"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,56 +24,68 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="base.line.android.baseline.Web_Design"
+            android:name=".Web_Design"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="base.line.android.baseline.WebDevlapment"
+            android:name=".WebDevlapment"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="base.line.android.baseline.Seo"
+            android:name=".Seo"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="base.line.android.baseline.Contact"
+            android:name=".Contact"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="base.line.android.baseline.activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="base.line.android.baseline.Notification.Send_Notifaction"
+            android:name=".Notification.Send_Notifaction"
             android:label="" />
 
-        <service android:name="base.line.android.baseline.service.MyFirebaseMessagingService">
+        <service android:name=".service.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="base.line.android.baseline.service.MyFirebaseInstanceIDService">
+        <service android:name=".service.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
         <activity
-            android:name="base.line.android.baseline.About_Us"
+            android:name=".About_Us"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="base.line.android.baseline.services"
+            android:name=".services"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="base.line.android.baseline.Blog"
+            android:name=".Blog"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="base.line.android.baseline.Career"
+            android:name=".Career"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Block_A"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Blog_B"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utils.Blogc"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar"></activity>
-
     </application>
+
 </manifest>

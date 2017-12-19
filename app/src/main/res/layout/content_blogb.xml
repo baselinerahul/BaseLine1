@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/blog2">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="How you market it"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Good web development is not every about specialized development and design elements like codes and programs etc but it also is dependent on how you market your site. If you have created a very standardized website but you are not marketing it in the right way then there is big possibility of missing its mark set by you. You have to observe newest promotion styles and even make impressive changes in your websites based to those trends to make it more beautiful for your focus on visitors."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Interactive Interface"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Imagine a visitor landing on your website as a result of a search he/she conducted on Google about website redesigning companies, but your user interface is so complicated that they are unable to get their desired information. That will result not only in absent out on a prospective client but also will impinge on the rapport of your website as that visitor might discuss about this within his social circle. You have to make your website interface interactive and user-friendly in order to generate more traffic and capture a larger audience."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Designs and Layouts"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="The core of a website is the design and structure you current for development reasons. First aspect to keep in mind for that is to make it adjustable according to different screen sizes and modules as visitors these days usually use other devices like smart phones and tablets to use the internet and not just computers and laptops. Web design and redesign is essential to accomplish that in order to make your web page accessible and useful for your visitors."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Content Placement"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Content Placement and management is vital for professional web design and development as the pages in your website should contain precise and relevant content which is coherent with the vision of your website. Information should be placed according to the structure of the pages and the Home Page should be the most catchy one giving a sneak preview of all other pages in one way or another."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Visual Enhancements"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="The visual enhancements should be a part of web design and development solutions. They shouldn’t be too flashy to distract the visitor’s attention entirely to them but they should be aesthetically pleasing enough to keep the visitor interested. Your web content should have a font which is vivid and visible making it easy to read and relevant attributes should be placed within the designs to make it look according to your specifications."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</ScrollView>

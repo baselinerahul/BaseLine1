@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/blog1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Nowadays it is not just sufficient to have a website. The productiveness of the site and its capability of revenue generating are of prim benefits for any business identity. Website designing and developing has to be performed as part of the marketing and advertising strategy. Some of the key problems for a strategic design and development are as follows."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Aim:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="The business personality needs to decide about the goals that have to be reached with the help of the website. This involves deciding what clients need to be focused. The attitude of the possible buyers should be considered as one of the base of web design. This is the only way to make the visitor feel that the offerings of the site are trustworthy and worth buying. An aimless site is sure to be ineffective and just an addition to the list of costs."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="User oriented:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="After studying the prospective buyer behavior the website should be designed to look appealing to the visitor. The website designer should try to use the visual for convincing the visitor. It has been noted that the visuals are always more effective than the text content. The content should be arranged in the layout that the visitor is impressed and is converted from a visitor to a buyer. The navigation through the website should be easy and user friendly."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Search engine oriented:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="As part of the strategy, the web design needs to be search engine friendly. This means that the text content should have the key words or key word phrases. To make the web design more search engine friendly other elements like the incoming links, outgoing links, speed of downloading and comfort at navigation play an important role. Regular updating of the website helps to haul up the website in the search engine rankings. The website design should be a bit flexible to embed extra content for upgrading the website."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text=" Interactive:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="This is a vital element of the website design technique. The web design should be able to communicate with the visitor to your site just like any business consultant. This involves equipping the website with tools such as processor chips for payment, tools for SEO analysis of traffic, bulletin boards, shopping carts, and tools for advertising management and systems for content management.
+
+A well organized strategy needs to be designed for a successful web design. This starts when the need of the website is being examined but there is no end to the website development. All the techniques need to target on optimizing the program of the website and maximizing the capabilityof the website to convert the visitor into buyer.
+
+It is much better to avail the services of an expert web design and development company to get a website that is based on an ideal approach to make the website a success and not a bad debt expense."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

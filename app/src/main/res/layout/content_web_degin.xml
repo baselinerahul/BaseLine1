@@ -8,8 +8,9 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 <ImageView
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/web_degin" />
+    android:layout_height="260dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/web_designing" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,6 +24,6 @@
         android:layout_marginTop="20dp"
         android:text="Web Designing Company can help you to attract customers. Commonly it is the design of the website which can draw in people but it also has the power to drive them away. Having a one among a type web composition is a vital piece of the marking and promoting the process of your commercial enterprise."
         android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:textSize="16dp" />
     </LinearLayout>
 </LinearLayout>

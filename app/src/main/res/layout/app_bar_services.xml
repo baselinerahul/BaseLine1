@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="base.line.android.baseline.Contact">
+    tools:context="base.line.android.baseline.services">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
 
             <ImageView
                 android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_height="36dp"
                 android:layout_gravity="center"
                 android:background="@drawable/logo" />
         </android.support.v7.widget.Toolbar>

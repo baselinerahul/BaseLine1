@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="base.line.android.baseline.Contact">
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="54dp"
@@ -23,10 +24,8 @@
                 android:layout_gravity="center"
                 android:background="@drawable/logo" />
         </android.support.v7.widget.Toolbar>
-
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_career" />
-
+    <include layout="@layout/content_blocka" />
 
 </android.support.design.widget.CoordinatorLayout>
