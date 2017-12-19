@@ -6,7 +6,6 @@ package base.line.android.baseline;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -41,17 +40,17 @@ public class Career extends SecuredSessionActivity {
         message1 = findViewById(R.id.message);
         send = findViewById(R.id.send);
         attach = findViewById(R.id.attach);
-        txt1 = findViewById(R.id.tecarrer1);
-        txt2 = findViewById(R.id.tecarrer2);
-        txt3 = findViewById(R.id.tecarrer3);
-        txt4 = findViewById(R.id.tecarrer4);
-
-        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
-
-        txt1.setTypeface(custom_font);
-        txt2.setTypeface(custom_font);
-        txt3.setTypeface(custom_font);
-        txt4.setTypeface(custom_font);
+//        txt1 = findViewById(R.id.tecarrer1);
+//        txt2 = findViewById(R.id.tecarrer2);
+//        txt3 = findViewById(R.id.tecarrer3);
+//        txt4 = findViewById(R.id.tecarrer4);
+//
+//        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
+//
+//        txt1.setTypeface(custom_font);
+//        txt2.setTypeface(custom_font);
+//        txt3.setTypeface(custom_font);
+//        txt4.setTypeface(custom_font);
         attach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +84,7 @@ public class Career extends SecuredSessionActivity {
             message = message1.getText().toString();
             final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
             emailIntent.setType("plain/text");
-            emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"baselinerahul@gmail.com"});
+            emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"hr@baselineitdevelopment.com"});
             emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
             if (URI != null) {
                 emailIntent.putExtra(Intent.EXTRA_STREAM, URI);

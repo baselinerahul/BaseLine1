@@ -4,7 +4,6 @@ package base.line.android.baseline;
  * Created by Rahul on 06-12-2017.
  */
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -17,8 +16,8 @@ public class WebDevlapment extends SecuredSessionActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_devlapment);
         onNavigation();
-        textView = findViewById(R.id.tetwe_dev);
-        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
-        textView.setTypeface(custom_font);
+//        textView = findViewById(R.id.tetwe_dev);
+//        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
+//        textView.setTypeface(custom_font);
     }
 }

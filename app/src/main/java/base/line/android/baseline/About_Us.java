@@ -4,7 +4,6 @@ package base.line.android.baseline;
  * Created by Rahul on 06-12-2017.
  */
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -17,6 +16,7 @@ public class About_Us extends SecuredSessionActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about__us);
         onNavigation();
+
         txt1 = findViewById(R.id.tetabout1);
         txt2 = findViewById(R.id.tetabout2);
         txt3 = findViewById(R.id.tetabout3);
@@ -27,16 +27,18 @@ public class About_Us extends SecuredSessionActivity {
         txt8 = findViewById(R.id.tetabout8);
         txt9 = findViewById(R.id.tetabout9);
         txt10 = findViewById(R.id.tetabout10);
-        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
-        txt1.setTypeface(custom_font);
-        txt2.setTypeface(custom_font);
-        txt3.setTypeface(custom_font);
-        txt4.setTypeface(custom_font);
-        txt5.setTypeface(custom_font);
-        txt6.setTypeface(custom_font);
-        txt7.setTypeface(custom_font);
-        txt8.setTypeface(custom_font);
-        txt9.setTypeface(custom_font);
-        txt10.setTypeface(custom_font);
+
+//        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
+//
+//        txt1.setTypeface(custom_font);
+//        txt2.setTypeface(custom_font);
+//        txt3.setTypeface(custom_font);
+//        txt4.setTypeface(custom_font);
+//        txt5.setTypeface(custom_font);
+//        txt6.setTypeface(custom_font);
+//        txt7.setTypeface(custom_font);
+//        txt8.setTypeface(custom_font);
+//        txt9.setTypeface(custom_font);
+//        txt10.setTypeface(custom_font);
     }
 }

@@ -10,7 +10,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
@@ -54,13 +53,13 @@ public class MainActivity extends SecuredSessionActivity implements BaseSliderVi
          textView4 = findViewById(R.id.txt4);
          textView5 = findViewById(R.id.txt5);
          textView6 = findViewById(R.id.txt6);
-         Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
-         textView1.setTypeface(custom_font);
-         textView2.setTypeface(custom_font);
-         textView3.setTypeface(custom_font);
-         textView4.setTypeface(custom_font);
-         textView5.setTypeface(custom_font);
-         textView6.setTypeface(custom_font);
+//         Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
+//         textView1.setTypeface(custom_font);
+//         textView2.setTypeface(custom_font);
+//         textView3.setTypeface(custom_font);
+//         textView4.setTypeface(custom_font);
+//         textView5.setTypeface(custom_font);
+//         textView6.setTypeface(custom_font);
 
 
          Hash_file_maps = new HashMap<String, String>();
@@ -139,18 +138,23 @@ public class MainActivity extends SecuredSessionActivity implements BaseSliderVi
                      // gcm successfully registered
                      // now subscribe to `global` topic to receive app wide notifications
                      FirebaseMessaging.getInstance().subscribeToTopic(Config.TOPIC_GLOBAL);
-
                      displayFirebaseRegId();
 
                  } else if (intent.getAction().equals(Config.PUSH_NOTIFICATION)) {
                      // new push notification is received
-
                      String message = intent.getStringExtra("message");
-                     Toast.makeText(getApplicationContext(), "Push notification: " + message, Toast.LENGTH_LONG).show();
+
+                     Toast.makeText(getApplicationContext(), "" + message, Toast.LENGTH_LONG).show();
                      if (message.isEmpty()) {
                          txtMessage.setText("nulll");
+                     } else {
+                         txtMessage.setText(message);
+//                         Dialog dialog = new Dialog(context);
+//                         dialog.setContentView(R.layout.popup_layout);
+//                         TextView txt = (TextView)dialog.findViewById(R.id.textView2);
+//                         txt.setText(message);
+//                         dialog.show();
                      }
-                     txtMessage.setText(message);
                  }
              }
          };

@@ -5,7 +5,6 @@ package base.line.android.baseline;
  */
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,16 +27,14 @@ public class Contact extends SecuredSessionActivity {
         view1 = findViewById(R.id.address);
         view2 = findViewById(R.id.address2);
         view3 = findViewById(R.id.address3);
-        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
-        view1.setTypeface(custom_font);
-        view2.setTypeface(custom_font);
-        view3.setTypeface(custom_font);
+//        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
+//        view1.setTypeface(custom_font);
+//        view2.setTypeface(custom_font);
+//        view3.setTypeface(custom_font);
         editTextTo = findViewById(R.id.editText1);
         editTextSubject = findViewById(R.id.editText2);
         editTextMessage = findViewById(R.id.editText3);
-
         send = findViewById(R.id.button1);
-
         send.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -52,11 +49,8 @@ public class Contact extends SecuredSessionActivity {
                 //need this to prompts email client only
                 email.setType("message/rfc822");
                 startActivity(Intent.createChooser(email, "Choose an Email client :"));
-
             }
 
         });
-
-
     }
 }
