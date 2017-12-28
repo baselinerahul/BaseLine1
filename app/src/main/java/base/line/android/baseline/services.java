@@ -25,9 +25,7 @@ public class services extends SecuredSessionActivity {
 //        text7 = findViewById(R.id.tet7);
 //        text8 = findViewById(R.id.tet8);
 //        text9 = findViewById(R.id.tet9);
-//
 //        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
-//
 //        text1.setTypeface(custom_font);
 //        text2.setTypeface(custom_font);
 //        text3.setTypeface(custom_font);

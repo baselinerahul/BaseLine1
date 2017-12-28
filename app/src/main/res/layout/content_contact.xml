@@ -79,8 +79,6 @@
                     android:text="Submit"
                     android:textColor="#fff" />
             </LinearLayout>
-
-
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -147,12 +145,10 @@ Mohali, Industrial Area"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="10dp">
-
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
                         android:background="@drawable/mail_icon" />
-
                     <TextView
                         android:id="@+id/address3"
                         android:layout_width="wrap_content"
@@ -162,10 +158,7 @@ Mohali, Industrial Area"
                         android:text="hr@baselineitdevelopment.com"
                         android:textColor="@color/black" />
                 </LinearLayout>
-
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
     </LinearLayout>
 </ScrollView>

@@ -32,11 +32,7 @@ public class Send_Notifaction extends AppCompatActivity {
         to = intent.getStringExtra("to");
         message = (EditText) findViewById(R.id.message_txt2);
         titel = (EditText) findViewById(R.id.tital_txt);
-
-
         send_notifacation = (Button) findViewById(R.id.send_notifacation);
-
-
         send_notifacation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,7 +42,6 @@ public class Send_Notifaction extends AppCompatActivity {
                 m = message.getText().toString();
                 t = titel.getText().toString();
                 String[] words=to.split("\\s");
-
                 dataNoti.setTo(words[3]);
                 Notification.setMessage("gbjh");
                 Notification.setTitle("hjnvjhv");
@@ -54,7 +49,6 @@ public class Send_Notifaction extends AppCompatActivity {
                 dataNoti.setData(Notification);
                 PushRequ pushRequ = new PushRequ();
                 pushRequ.execute(MessageType.POST, URIConstants.PUSHNOTI, dataNoti);
-
             }
         });
 

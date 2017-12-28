@@ -16,7 +16,6 @@ public class About_Us extends SecuredSessionActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about__us);
         onNavigation();
-
         txt1 = findViewById(R.id.tetabout1);
         txt2 = findViewById(R.id.tetabout2);
         txt3 = findViewById(R.id.tetabout3);
@@ -27,7 +26,6 @@ public class About_Us extends SecuredSessionActivity {
         txt8 = findViewById(R.id.tetabout8);
         txt9 = findViewById(R.id.tetabout9);
         txt10 = findViewById(R.id.tetabout10);
-
 //        Typeface custom_font = Typeface.createFromAsset(getAssets(), "Font/JosefinSans-Regular.ttf");
 //
 //        txt1.setTypeface(custom_font);
